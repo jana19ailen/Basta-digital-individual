@@ -1,0 +1,5 @@
+{
+  "name": "Basta digital para celu ",
+  "description": "Una aplicación de apoyo para el juego de mesa BASTA!, con tablero circular interactivo, gestión de letras usadas y temporizador configurable.",
+  "requestFramePermissions": []
+}

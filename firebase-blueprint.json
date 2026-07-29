@@ -1,0 +1,27 @@
+{
+  "rulesVersion": "2",
+  "collections": [
+    {
+      "name": "rooms",
+      "docId": "roomId",
+      "fields": {
+        "status": "string",
+        "rules": "map",
+        "proposerId": "string",
+        "lastUpdated": "timestamp"
+      },
+      "subcollections": [
+        {
+          "name": "players",
+          "docId": "playerId",
+          "fields": {
+            "name": "string",
+            "color": "string",
+            "vote": "string",
+            "lastSeen": "timestamp"
+          }
+        }
+      ]
+    }
+  ]
+}
