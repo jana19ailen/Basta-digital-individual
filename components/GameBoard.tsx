@@ -30,7 +30,7 @@ const GameBoard: React.FC<{ room: any, players: any[], playerId: string }> = ({ 
   useEffect(() => {
     if (status === 'playing') {
       const interval = setInterval(() => {
-        const remaining = Math.max(0, Math.ceil((timerEndTime - Date.now()) / 1000));
+        const remaining = Math.max(0, Math.min(timerDuration, Math.ceil((timerEndTime - Date.now()) / 1000)));
         setTimeLeft(remaining);
         if (remaining <= 0) {
           clearInterval(interval);
